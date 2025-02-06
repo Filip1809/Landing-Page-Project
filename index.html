@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="styles.css">
   <title>Project Landing Page</title>
 </head>
 <body>
-  <nav>
-    <div id="#navmenu">
+  <nav class="navbar">
+    <div class="navcontainer">
+      <div class="logo">Header Logo</div>
       <ul class="nav-list">
-        <li class="navitem"><strong>Header Logo</strong></li>
         <li class="navitem">Header link one</li>
         <li class="navitem">Header link two</li>
         <li class="navitem">Header link three</li>
@@ -18,63 +18,70 @@
     </div>
   </nav>
   
-  <header>
-    <section class="section1">
-      <div class="introtext">
+  <header class="hero">
+    <div class="navcontainer">
+      <div class="intro">
         <h1 class="mainheading">This website is awesome</h1>
-        <p class="subheading">This website goes here under the main title. it's a smaller font and the color is lower contrast</p>
-        <button class="signup">Sign up</button>
-        <img src="/img/maskman.jpg" alt="a picture of a man with a mask">
+        <p class="subheading">This website has some subtext that goes here under the main title. It’s a smaller font and the color is lower contrast.</p>
+        <button class="btn signup">Sign up</button>
       </div>
-    <section>
+      <div class="hero-image">
+        <img src="/img/maskman.jpg" alt="A man with a mask in a hoodie">
+      </div>
+    </div>
   </header>
 
   <main>
-    <section class="section2">
-      <h2>Some random information</h2>
-        <div class="flex">
-          <div class="card card1">
+    <section class="info-section">
+      <div class="container">
+        <h2>Some random information.</h2>
+        <div class="info-cards">
+          <div class="card">
             <div class="square"></div>
-            <p>this is some subtext under an illustration or an image </p>
+            <p>this is some subtext under an illustration or image</p>
           </div>
-          
-          <div class="card card2">
+          <div class="card">
             <div class="square"></div>
-            <p>this is some subtext under an illustration or an image </p>
+            <p>this is some subtext under an illustration or image</p>
           </div>
-          
-          <div class="card card3">
+          <div class="card">
             <div class="square"></div>
-            <p>this is some subtext under an illustration or an image </p>
+            <p>this is some subtext under an illustration or image</p>
           </div>
-
-          <div class="card card4">
+          <div class="card">
             <div class="square"></div>
-            <p>this is some subtext under an illustration or an image </p>
+            <p>this is some subtext under an illustration or image</p>
           </div>
         </div>
-    </section>
-
-    <section class="section3">
-      <div class="quote">
-        <p>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All i know is that it looks nice.<p>
-        <p><Strong>-Thor, The God of thunder</Strong></p>
       </div>
     </section>
 
-    <section class="section4">
-      <div class="newslettercontainer">
-        <p>Call to action! It's time!</p>
-        <p>Sign up for our product by clicking that button right over there!</p>
-        <button class="Newsletterbutton">Sign up</button>
+    <section class="quote-section">
+      <div class="container">
+        <blockquote>
+          <p>This is an inspiring quote, or a testimonial from a customer. Maybe it’s just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
+          <cite>- Thor, God of Thunder</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="sign-container">
+        <div class="cta-container">
+          <div class="cta-text">
+            <p class="cta-heading">Call to action! It’s time!</p>
+            <p class="cta-subtext">Sign up for our product by clicking that button right over there!</p>
+          </div>
+          <button class="btn cta-btn">Sign up</button>
+        </div>
       </div>
     </section>
   </main>
 
-
-  <footer>
-    <h3>Copyright @ The Odin Project 2025</h3>
+  <footer class="footer">
+    <div class="container">
+      <h3>Copyright © The Odin Project 2025</h3>
+    </div>
   </footer>
-  
 </body>
 </html>
